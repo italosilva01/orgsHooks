@@ -2,7 +2,7 @@ import React, {useEffect, useState} from 'react';
 import {Text, View, Image, StyleSheet} from 'react-native';
 import logo from '../../../assets/logo.png';
 import {loadHeader} from '../../../services/loadDatas';
-export default function Todo() {
+export default function Topo() {
   const [header, setHeader] = useState({welcome: '', capiton: ''});
   const updateHeaderInfos = () => {
     return loadHeader();
@@ -34,9 +34,11 @@ const style = StyleSheet.create({
     fontSize: 26,
     lineHeight: 42,
     fontWeight: 'bold',
+    color: '#464646',
   },
   capiton: {
     fontSize: 16,
     lineHeight: 26,
+    color: '#a3a3a3',
   },
 });
